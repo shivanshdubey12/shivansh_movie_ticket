@@ -1,6 +1,8 @@
+# shivansh_movie_ticket
+
 # 🎬 IMovies - Movie Ticket Booking Made Simple
 
-A full-stack cinema ticketing and theater management platform built on the **MERN Stack** (MongoDB, Express.js, React.js, Node.js) with real-time seat tracking powered by **Socket.io**.
+A full-stack, real-time cinema ticket booking and theater management platform built on the **MERN Stack** (MongoDB, Express.js, React.js, Node.js) with live seat synchronization powered by **Socket.io**.
 
 ![IMovies Banner](https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80)
 
@@ -9,8 +11,8 @@ A full-stack cinema ticketing and theater management platform built on the **MER
 ## 🌟 Key Features
 
 ### 🍿 Customer Experience
-- **Interactive Seating Map**: Visual auditorium layout categorized by **Silver**, **Gold**, and **VIP Recliner** seating tiers.
-- **Live Seat Availability with Socket.io**: Real-time locking and booking updates broadcast to all users looking at the same show to prevent double bookings.
+- **Interactive Seating Grid**: Visual auditorium layout categorized by **Silver**, **Gold**, and **VIP Recliner** seating tiers.
+- **Live Seat Availability with Socket.io**: Real-time locking and booking updates broadcast to all users viewing the same show to prevent double bookings.
 - **Movie Catalog & Filtering**: Search and filter by genre (Action, Sci-Fi, Drama, etc.), language, cinema location, and release status (Now Showing / Upcoming).
 - **Showtimes & Schedules**: Real-time calendar dates with multi-theatre showtimes (2D, 3D, IMAX 3D, 4DX).
 - **Simulated Payment Gateway**: Card (Debit/Credit) with card format validation and UPI (Google Pay, PhonePe, Paytm).
@@ -63,7 +65,7 @@ IMovies System Architecture
 ### Prerequisites
 - **Node.js** (v16 or higher)
 - **npm** (v8 or higher)
-- **MongoDB** (Local instance or MongoDB Atlas. *Note: If a local MongoDB instance is not detected, the backend will automatically spin up an embedded in-memory MongoDB instance with pre-seeded data for zero-friction testing!*)
+- **MongoDB** (Local instance or MongoDB Atlas. *Note: If a local MongoDB instance is not detected, the backend automatically spins up an embedded in-memory MongoDB instance with pre-seeded data for zero-friction testing!*)
 
 ### 1. Start Backend Server
 ```bash
@@ -85,7 +87,7 @@ The frontend dev server runs on `http://localhost:5173`.
 
 ## 🔑 Pre-Configured Demo Credentials
 
-For quick testing, the login screen includes **one-click demo autofill buttons**:
+The login screen includes **one-click demo autofill buttons**:
 
 | Role | Email | Password | Permissions |
 | :--- | :--- | :--- | :--- |
@@ -166,7 +168,3 @@ For quick testing, the login screen includes **one-click demo autofill buttons**
 - `GET /api/notifications` - Get user notifications & unread count (Protected)
 - `PUT /api/notifications/:id/read` - Mark single notification as read (Protected)
 - `PUT /api/notifications/read-all` - Mark all notifications as read (Protected)
-
-
-# shivansh_movie_ticket
-
