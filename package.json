@@ -1,0 +1,25 @@
+{
+  "name": "imovies",
+  "version": "1.0.0",
+  "description": "IMovies - Movie ticket booking made simple",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed"
+  },
+  "keywords": [
+    "movie-ticket-booking",
+    "mern",
+    "socketio",
+    "real-time",
+    "cinema-management",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs"
+  ],
+  "author": "IMovies",
+  "license": "ISC"
+}
+
